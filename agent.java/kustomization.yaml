@@ -4,6 +4,6 @@ resources:
 - daemonset.yaml
 
 configMapGenerator:
-- name: scouter-host-agent-config
+- name: scouter-java-agent-config
   files:
   - scouter.conf
