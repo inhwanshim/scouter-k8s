@@ -1,4 +1,4 @@
-name=foobargem/scouter-agent-host
+name=wlbebetter/scouter-agent-host
 tag=2.17.1
 scouter_dir = ./scouter
 scouter_dir_absent = $(scouter_dir)-
