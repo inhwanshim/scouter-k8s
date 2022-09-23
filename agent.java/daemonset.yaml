@@ -26,7 +26,7 @@ spec:
         effect: NoSchedule
       containers:
       - name: scouter-java-agent
-        image: wlbebetter/scouter-agent-host:2.17.1
+        image: wlbebetter/scouter-java-agent:2.17.1
         volumeMounts:
         - name: scouter-java-agent-config
           mountPath: /scouter/conf
