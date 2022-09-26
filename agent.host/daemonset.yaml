@@ -2,7 +2,7 @@ apiVersion: apps/v1
 kind: DaemonSet
 metadata:
   name: scouter-host-agent
-  namespace: kube-system
+  namespace: scouter
   labels:
     app: scouter-host-agent
 spec:
