@@ -2,7 +2,7 @@
 
 ## agent.host
 
-* namespace: kube-system
+* namespace: scouter
 * resources
   * configmap
   * daemonset
