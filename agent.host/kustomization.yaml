@@ -1,4 +1,4 @@
-namespace: kube-system
+namespace: scouter
 
 resources:
 - daemonset.yaml
