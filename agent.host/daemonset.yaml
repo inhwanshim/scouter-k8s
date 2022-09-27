@@ -33,4 +33,4 @@ spec:
       volumes:
       - name: scouter-agent-host-config
         configMap:
-          name: scouter-host-agent-config
+          name: scouter-agent-host-config
