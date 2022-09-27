@@ -1,0 +1,9 @@
+namespace: scouter
+
+resources:
+- deployment.yaml
+
+configMapGenerator:
+- name: scouter-agent-config
+  files:
+  - scouter.conf
