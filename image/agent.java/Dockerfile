@@ -3,10 +3,10 @@
 #ADD ./scouter/agent.host /scouter
 #WORKDIR /scouter
 #CMD ["java", "-classpath", "/scouter/scouter.host.jar", "scouter.boot.Boot", "/scouter/lib"]
-FROM tomcat:9.0
+FROM tomcat:10.0
 
 ENV TOMCAT_HOME /usr/local/tomcat
-COPY agent.java $TOMCAT_HOME/scouter/agent.java
+COPY agent.java /opt/scouter/agent.java
 COPY catalina.sh $TOMCAT_HOME/bin/catalina.sh
 
 EXPOSE 6180/tcp
