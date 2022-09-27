@@ -4,15 +4,15 @@ metadata:
   name: scouter-java-agent
   namespace: scouter
   labels:
-    app: scouter-java-agent
+    app: scouter-agent-java
 spec:
   selector:
     matchLabels:
-      name: scouter-java-agent
+      name: scouter-agent-java
   template:
     metadata:
       labels:
-        name: scouter-java-agent
+        name: scouter-agent-java
     spec:
       terminationGracePeriodSeconds: 30
       nodeSelector:
@@ -25,12 +25,12 @@ spec:
         operator: Exists
         effect: NoSchedule
       containers:
-      - name: scouter-java-agent
-        image: wlbebetter/scouter-java-agent:2.17.1
+      - name: scouter-agent-java
+        image: wlbebetter/scouter-agent-java:2.17.1
         volumeMounts:
-        - name: scouter-java-agent-config
-          mountPath: /scouter/conf
+        - name: scouter-agent-java-config
+          mountPath: /opt/scouter/agent.java/conf
       volumes:
-      - name: scouter-java-agent-config
+      - name: scouter-agent-java-config
         configMap:
-          name: scouter-java-agent-config
+          name: scouter-agent-java-config
