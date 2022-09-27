@@ -5,6 +5,5 @@ resources:
 
 configMapGenerator:
 - name: scouter-agent-java-config
-#- name: scouter-java-agent-config
   files:
   - scouter.conf
